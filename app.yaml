@@ -1,4 +1,5 @@
 service: default
 runtime: python27
 env: standard
+threadsafe: yes
 entrypoint: gunicorn -b :$PORT main:app
