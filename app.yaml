@@ -1,5 +1,4 @@
 service: default
 runtime: python36
 env: standard
-threadsafe: yes
 entrypoint: gunicorn -b :$PORT main:app
