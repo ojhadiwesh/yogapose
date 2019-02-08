@@ -9,7 +9,7 @@ from keras.preprocessing import image
 from keras.models import Sequential
 from keras.models import load_model
 import h5py
-
+from flask import Flask, request
 app = Flask(__name__)
 
 @app.route('/', methods=['POST'])
